@@ -152,7 +152,8 @@ namespace lab618
           leaf *pCurLeaf = m_pTable[idx];
           while (nullptr != pCurLeaf)
           {
-            if (pCurLeaf->pData == &element)
+            //if (pCurLeaf->pData == &element)
+            if(Compare(pCurLeaf->pData, &element) == 0)
             {
               break;
             }
@@ -205,7 +206,8 @@ namespace lab618
           leaf *current_leaf = m_pTable[idx];
           while (nullptr != current_leaf)
           {
-            if (*(current_leaf->pData) == *pElement)
+            //if (*(current_leaf->pData) == *pElement)
+            if (Compare(current_leaf->pData, pElement) == 0)
             {
               break;
             }
