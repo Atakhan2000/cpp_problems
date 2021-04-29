@@ -474,7 +474,6 @@ namespace lab618
 
             if (it.getLeaf() == m_pBegin)
             {
-                leaf* pOldBegin = m_pBegin;
                 if (m_pBegin == m_pEnd)
                 {
                     m_pBegin = m_pEnd = 0;
@@ -483,7 +482,6 @@ namespace lab618
                     m_pBegin->pprev = nullptr;
                 }
                 it.setLeafPreBegin(m_pBegin);
-                delete pOldBegin;
                 return;
             }
 
