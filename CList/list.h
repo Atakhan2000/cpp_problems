@@ -481,8 +481,8 @@ namespace lab618
                 } else {
                     m_pBegin = m_pBegin->pnext;
                     m_pBegin->pprev = nullptr;
-                    it.setLeafPreBegin(m_pBegin);
                 }
+                it.setLeafPreBegin(m_pBegin);
                 delete pOldBegin;
                 return;
             }
@@ -515,8 +515,9 @@ namespace lab618
                 {
                     m_pEnd = m_pEnd->pprev;
                     m_pEnd->pnext = nullptr;
-                    it.setLeafPostEnd(m_pEnd);
                 }
+                it.setLeafPostEnd(m_pEnd);
+
                 delete pEnd;
                 pEnd = 0;
                 return;
