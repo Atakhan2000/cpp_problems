@@ -334,10 +334,10 @@ namespace lab618
 
             leaf* getLeaf()
             {
-            	if (m_pCurrent == 0)
-            	{
-            		std::invalid_argument("m_pCurrent == 0");
-            	}
+            	//if (m_pCurrent == 0)
+            	//{
+            	//	std::invalid_argument("m_pCurrent == 0");
+            	//}
                 return m_pCurrent;
             }
 
