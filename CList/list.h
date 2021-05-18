@@ -287,10 +287,10 @@ namespace lab618
 
             void operator++()
             {
-              if (m_pCurrent == m_pEnd)
-              {
-                throw std::invalid_argument("can't move right");
-              }
+              //if (m_pCurrent == m_pEnd)
+              //{
+                //throw std::invalid_argument("can't move right");
+              //}
 
               if (m_pCurrent == m_pBegin)
               {
@@ -585,3 +585,4 @@ namespace lab618
 
 };
 #endif //#ifndef TEMPLATES_LIST_2021_02_11
+
